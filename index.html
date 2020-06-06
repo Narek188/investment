@@ -3,8 +3,496 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
+
+    <div class="modal">
+        <div class="modalContainer">
+            <div class="modalHeader">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+
+            <div class="modalContent">
+                
+                <div class="buttons">
+                    <button class="registerButton"> Regsiter your account </button>
+                    <button class="loginButton"> Sign In to your account </button>
+                </div>
+
+                <div class="socialMedia">
+                    <i class="fa fa-facebook facebook_icon" aria-hidden="true"></i>
+                    <i class="fa fa-google google_icon" aria-hidden="true"></i>
+                    <i class="fa fa-twitter twitter_icon" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin linkedin_icon" aria-hidden="true"></i>
+                </div>
+
+                <!-- 
+                    Karevor Code
+
+                    <form action="">
+                    <div class="inputFields">
+                        <div class="input-icons"> 
+                            <i class="fa fa-user icon"> </i> 
+                            <input class="input-field" type="text" placeholder="Your Email"> 
+                        </div> 
+
+                        <div class="input-icons"> 
+                            <i class="fa fa-user icon"> </i> 
+                            <input class="input-field" type="text" placeholder="Your Password"> 
+                        </div> 
+                    </div>
+
+                    <div class="remember">
+                        <input type="checkbox" value="lsRememberMe" id="rememberMe"> <label for="rememberMe">Remember me</label>
+                    </div>
+
+                    <div class="buttonAndCheckbox">
+                        <div class="forgot_pass">
+                            <a href="#"> Forgot password? </a>
+                        </div>
+                        <button> Sign In </button>
+                    </div>
+                </form> -->
+
+                <form action="">
+                    <div class="inputFields">
+                        <div class="input-icons"> 
+                            <i class="fa fa-user icon"> </i> 
+                            <input class="input-field" type="text" placeholder="Username"> 
+                        </div> 
+
+                        <div class="input-icons"> 
+                            <i class="fa fa-envelope icon" aria-hidden="true"></i>
+                            <input class="input-field" type="text" placeholder="Email"> 
+                        </div> 
+
+                        <div class="input-icons"> 
+                            <i class="fa fa-key icon"> </i> 
+                            <input class="input-field" type="text" placeholder="Password"> 
+                        </div> 
+
+                        <div class="input-icons"> 
+                            <i class="fa fa-repeat icon"> </i> 
+                            <input class="input-field" type="text" placeholder="Repeat Password"> 
+                        </div> 
+
+                        <div class="input-icons"> 
+                            <i class="fa fa-hand-pointer-o icon" aria-hidden="true"></i>
+                            <select name="" id="" class="select-field">
+                                <option value=""> Buisnessman </option>
+                                <option value=""> Person </option>
+                            </select>
+                        </div> 
+                    </div>
+
+                    <div class="remember">
+                        <input type="checkbox" value="agree" id="agree"> 
+                        <label for="agree">I Agree To The Terms & Condisions</label>
+                    </div>
+
+                    <div class="buttonAndCheckbox">
+                        <button> Register </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <header>
+        <div class="background">
+            <div class="sub_header">
+
+                <div>
+                    <ul>
+                        <li> <i class="fa fa-phone" aria-hidden="true"></i> +374 91344049 </li>
+                        <li> <i class="fa fa-envelope-o" aria-hidden="true"></i> investmentam@gmail.com </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <nav>
+
+                <div class="navbar_texts">
+                    <ul>
+                        <li>
+                            <a href="index.html"> Home </a>
+                        </li>
+                        <li>
+                            <a href="about.html"> About Us </a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="user_plans.html"> User Plans </a>
+                        </li>
+                        <li>
+                            <a href="#"> Buisnessmans </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <img src="./index/logo.png" width="50" alt="">
+                </div>
+
+                <div>
+                    <ul class="navbar_items">
+                        <li>
+                            <button> <i class="fa fa-building" aria-hidden="true"></i> For Companies </button>
+                        </li>
+                        <li>
+                            <button> <i class="fa fa-sign-in" aria-hidden="true"></i> Login </button>
+                        </li>
+                        <li>
+                            <button> <i class="fa fa-user-plus" aria-hidden="true"></i> Regsiter </button>
+                        </li>
+                    </ul>
+
+                    <div class="navbar_bar">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+
+                </div>
+            </nav>
+
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+        </div>        
+    </header>
+
+    <main>
+
+        <div class="advantages_features_container">
+            <h2>Advantages and Features</h2>
+
+            <div class="grid">
+                <div>
+                    <i class="fa fa-money" aria-hidden="true"></i>
+                    <h3>Wealth Planning</h3>
+                    <p>
+                        Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. 
+                        Maecenas tristique orci ac sem. Dius ultcies pharetra magna. Donec accumsan malesuada...
+                    </p>
+                </div>
+
+                <div>
+                    <i class="fa fa-money" aria-hidden="true"></i>
+                    <h3>Philanthropy</h3>
+                    <p>
+                        Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. 
+                        Dius ultcies pharetra magna. Donec accumsan malesuada...
+                    </p>
+                </div>
+
+                <div>
+                    <i class="fa fa-money" aria-hidden="true"></i>
+                    <h3>Investment Management</h3>
+                    <p>
+                        Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. 
+                        Maecenas tristique orci ac sem. Dius ultcies pharetra magna. Donec accumsan malesuada...
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="steps">
+            <h2>Interesting Facts</h2>
+
+            <div class="container">
+
+                <div class="step">
+                    <span class="number"> Step 1 </span>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste blanditiis consequatur exercitationem commodi, sunt distinctio officia repellat! Alias, ab!
+                    </p>
+                </div>
+
+                <div class="step">
+                    <span class="number"> Step 2 </span>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste blanditiis consequatur exercitationem commodi, sunt distinctio officia repellat! Alias, ab!
+                    </p>
+                </div>
+
+                <div class="step">
+                    <span class="number"> Step 3 </span>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste blanditiis consequatur exercitationem commodi, sunt distinctio officia repellat! Alias, ab!
+                    </p>
+                </div>
+
+                <div class="step">
+                    <span class="number"> Step 4 </span>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste blanditiis consequatur exercitationem commodi, sunt distinctio officia repellat! Alias, ab!
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="contact_section">
+            <p>Looking for a First-Class Business Plan Consultant?</p>
+            <button> Contact Us </button>
+        </div>
+
+        <div class="video_section">
+            <div class="image">
+                <i class="fa fa-play-circle"></i>
+            </div>
+            <div class="text">
+                <h2>Professional digital agency that works for your success</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi magni veritatis laborum, nulla consequuntur laudantium quam cumque eaque tempore qui omnis voluptatum facilis praesentium tenetur iste consequatur eius enim cum ipsam aperiam illum! Est, temporibus omnis corporis atque quisquam reiciendis.s
+                </p>
+            </div>
+        </div>
+
+        <div class="famous_word">
+            
+            <h2> Words of famous people </h2>
+
+            <div class="slider">
+                <img src="./index/avatar.jpg" alt="">
+                <h4> Bill Gates </h4>
+                <p>
+                    “Highly recommended & a great experience. The process was simple and easy to understand. 
+                    Trading was straight forward, supports all major cryptocurrencies and the entire process was super smooth!”
+                </p>
+
+                <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ease_section">
+
+            <div class="text_container">
+                <h2> We Are Here To Ease The Financial Obstacles!</h2>
+
+                <p class="header_text">The choice is in your hands: Where do you go to get an advice and where you purchase products?!!</p>
+            
+                <div class="flex_cont">
+                    <div>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+
+                   <div class="text">
+                    <h3>Innovative Solutions</h3>
+                    <p>
+                        Innovative Solutions offers services, development services and consulting to help you make the best technology.
+                    </p>
+                   </div>
+                </div>
+
+                <div class="flex_cont">
+                    <div>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+
+                   <div class="text">
+                    <h3>On Time Services</h3>
+                    <p>
+                        Mutual funds from many investors to purchase broad range of investments, such as stocks, goals, and dreams.
+                    </p>
+                   </div>
+                </div>
+
+                <div class="flex_cont">
+                    <div>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+
+                   <div class="text">
+                    <h3>Best Support</h3>
+                    <p>
+                        We bring the right people business solutions to challenge established thinking and drive transformation.
+                    </p>
+                   </div>
+                </div>
+
+            </div>
+
+            <div class="img"></div>
+
+        </div>
+
+        <div class="getStarted_section">
+            <p>Doing the Right Thing, at the Right Time!</p>
+            <button> Get Started </button>
+        </div>
+
+        <div class="blog_container">
+            
+            <h2> News & Headline </h2>
+            
+            <p class="head_text">
+                Follow our latest news and thoughts which focuses exclusively on design, art, vintage, and also our latest work updates.
+            </p>
+
+            <div class="news_container">
+                
+                <div class="container">
+                    <img src="./index/blog.jpg">
+                    <p class="category"><a href="#">Audit & Evaluation</a></p>
+
+                    <h4>
+                        <a href="#">The hidden habits that cost you money?</a>
+                    </h4>
+
+                    <p class="date">November 30, 2018</p>
+                
+                    <div class="bio">
+                        The third Monday of January is supposed to be the most depressing day of the year.
+                    </div>
+
+                    <a href="#"><button> Read More </button></a>
+                </div>
+
+                <div class="container">
+                    <img src="./index/blog.jpg">
+                    <p class="category"><a href="#">Audit & Evaluation</a></p>
+
+                    <h4>
+                        <a href="#">The hidden habits that cost you money?</a>
+                    </h4>
+
+                    <p class="date">November 30, 2018</p>
+                
+                    <div class="bio">
+                        The third Monday of January is supposed to be the most depressing day of the year.
+                    </div>
+
+                    <a href="#"><button> Read More </button></a>
+                </div>
+
+                <div class="container">
+                    <img src="./index/blog.jpg">
+                    <p class="category"><a href="#">Audit & Evaluation</a></p>
+
+                    <h4>
+                        <a href="#">The hidden habits that cost you money?</a>
+                    </h4>
+
+                    <p class="date">November 30, 2018</p>
+                
+                    <div class="bio">
+                        The third Monday of January is supposed to be the most depressing day of the year.
+                    </div>
+
+                    <a href="#"><button> Read More </button></a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="container">
+
+            <div>
+                <h2> Investment.am </h2>
+                <p class="text">
+                    Investing is a global consulting firm with a twist. 
+                    We bring big ideas and challenge the norm. We work with our clients, not at them.
+                </p>
+            </div>
+
+            <div>
+                <h2> Useful Links </h2>
+
+                <ul>
+                    <li>
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="">Terms & Condition</a>
+                    </li>
+                    <li>
+                        <a href="">Support</a>
+                    </li>
+                    <li>
+                        <a href="">Contact Us</a>
+                    </li>
+               </ul>
+            </div>
+
+            <div>
+                <h2> Information </h2>
+
+                <ul>
+                    <li>
+                        <a href="">About us</a>
+                    </li>
+                    <li>
+                        <a href="">Customer</a>
+                    </li>
+                    <li>
+                        <a href="">Service</a>   
+                    </li>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                    <li>
+                        <a href="">BestSellers</a>
+                    </li>
+               </ul>
+            </div>
+
+            <div>
+                <h2>Our Address</h2>
+
+                <ul class="icons">
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i> 60 Grant Ave. Central New Road 0708, UK</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i> +880 1723 801 729</li>
+                    <li><i class="fa fa-envelope-o" aria-hidden="true"></i> investing@gmail.com</li>
+               </ul>
+            </div>
+
+        </div>
+
+        <div class="bottom">
+            <p class="copy">© 2018 <span>Investing</span> All Rights Reserved.</p>
+
+            <p class="bottom_second">
+                About Us | FAQ’s | Login
+            </p>
+        </div>
+
+    </footer>
+
 </body>
 </html>

@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Start .sub_header */
+    .sub_header {
+        background-color: rgba(2, 2, 2, 0.5);
+        color: rgba(255,255,255,0.66);
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .sub_header ul {
+        padding-top: 5px;
+    }
+
+    .sub_header ul li {
+        float: left;
+        padding-left: 20px;
+    }
+
+    .sub_header a {
+        color: white;
+    }
+
+    @media (max-width: 500px) {
+        .sub_header {
+            display: none;
+        }
+    }
+/* End .sub_header */
+
+/* Start Navbar */
+    .mainNavbar {
+        padding: 15px;
+        background-color: #0e8fc8;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .mainNavbar ul {
+        list-style-type: none;
+    }
+
+    .mainNavbar ul li {
+        float: left;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    .mainNavbar ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .mainNavbar .buttons button {
+        padding: 10px;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .mainNavbar .buttons button:hover{
+        background-color: white;
+        color: #0e8fc8;
+    }
+
+    .mainNavbar img {
+        width: 30px;
+    }
+
+    .mainNavbar .buttons .bars {
+        display: none;
+        border: none;
+        padding: 10px;
+    }
+
+    .mainNavbar .buttons .bars i {
+        font-size: 23px;
+    }
+
+
+    @media (max-width: 900px) {
+
+        .mainNavbar {
+            justify-content: space-between;
+        }
+
+        .mainNavbar .items {
+            display: none;
+        }
+
+        .mainNavbar img {
+            width: 30px;
+        }
+
+        .mainNavbar .buttons .bars {
+            display: block;
+        }
+
+        .mainNavbar .buttons .desktop_items {
+            display: none;
+        }
+    }
+/* End Navbar */
+
+/* Start Header Background Image */
+
+    .bg-image {
+        width: 100%;
+        height: 500px;
+        
+        background-image: url("../contact_us/contact.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bg-image h1 {
+        font-size: 80px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    @media (max-width: 500px) {
+        .bg-image h1 {
+            font-size: 55px;
+        }
+    }
+/* End Header Background Image */
+
+/* Start Data */    
+.data {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.data h2 {
+    font-size: 48px;
+}
+
+.data .flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;  
+}
+
+.data .flex div {
+    margin-top: 50px;
+}
+
+@media (max-width: 500px) {
+    .data .flex {
+        grid-template-columns: 1fr;
+    }
+}
+
+.data .flex i {
+    font-size: 35px;
+    color: #0e8fc8;
+    margin-bottom: 12px;
+}
+
+.data .flex h3 {
+    font-size: 22px;
+    margin-bottom: 13px;
+}
+
+/* End Data */   
+
+/* Start Map */
+    .map {
+        margin-top: 50px;
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 500px;
+    }
+/* End Map */
+
+/* Start Inputs */
+    .inputs {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    .inputs h2 {
+        text-align: center;
+        font-weight: 400;
+        color: #2a2f33;
+    }
+
+    .inputs .form {
+        margin-top: 20px;
+        display: grid;
+        justify-items: center;
+    }
+
+    .inputs .form div {
+        width: 600px;
+        margin-top: 20px;
+    }
+
+    .inputs .form div input, .inputs .form div textarea{
+        width: 100%;
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    .inputs .form button {
+        color: #fff;
+        background-color: #0e8fc8;
+        border-color: #0e8fc8;
+        border-radius: 4px;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 11px 38px;
+        cursor: pointer;
+        border: 1px solid;
+        outline: none;
+
+        margin-left: 251px;
+    }
+
+    @media (max-width: 700px) {
+        .inputs .form div {
+            width: auto;
+        }
+
+        .inputs .form div input, .form div textarea {
+            width: 400px;
+        }
+
+        .inputs .form button {
+            margin-left: 0px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .inputs .form div input, .inputs .form div textarea {
+            width: 250px;
+        }
+    }
+/* End Inputs */ 
+
+/* Start Footer */
+
+footer {
+    width: 100%;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+footer .container {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+footer .container ul li a {
+    color: rgba(255,255,255,0.55);
+    text-decoration: none;
+}
+
+footer .container ul li a:hover{
+    color: white;
+}
+
+footer .container .icons li {
+    line-height: 2;
+}
+
+footer .container div {
+    width: 200px;
+}
+
+footer .text {
+    padding-top: 20px;
+    line-height: 1.5;
+}
+
+footer ul {
+    padding-top: 10px;
+}
+
+footer ul li {
+    line-height: 1.8;
+}
+
+footer .text{
+    color: rgba(255,255,255,0.55);
+}
+
+footer .bottom {
+    padding: 18px 0px;
+    margin-top: 40px;
+    background-color: #000000;
+    border-top: 1px solid rgba(255,255,255,0.10);
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+}
+
+footer .bottom .copy {
+    font-size: 17px;
+}
+
+footer .bottom span {
+    color: #0e8fc8;
+}
+
+footer .bottom .bottom_second {
+    font-size: 17px;
+}
+
+@media (max-width: 820px) {
+    footer .container {
+        padding: 20px;
+    }
+    footer .container div {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 440px) {
+    footer .container {
+        padding: 20px;
+    }
+
+    footer .bottom .bottom_second {
+        padding-top: 15px;
+    }
+}
+
+/* End Footer */
