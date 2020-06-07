@@ -98,6 +98,23 @@
 
             <div class="filterPlans">
                 <button class="filter_button"> Filter <i class="fa fa-bars" aria-hidden="true"></i> </button>
+                
+                <div class="search_bar">
+                    <h2> Search your plan </h2>
+                    <input type="search" name="" id="" placeholder="Search...">
+                    <button>
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+
+                <div class="price_search">
+                    <h2> Choose plan price </h2>
+                    <!-- <div class="range-value" id="rangeV"></div> -->
+                    <div class="range-value" id="rangeV"></div>
+                    <input id="range" type="range" min="200" max="800" value="200" step="1">
+                    <!-- </div> -->
+                </div>
+
             </div>
 
             <div class="plans">
@@ -204,6 +221,8 @@
         </div>
 
     </main>
+
+    <script src="./js/user_plans.js"></script>
 
 </body>
 </html>
