@@ -7,6 +7,10 @@ ul {
     list-style-type: none;
 }
 
+main {
+    background-color: #e9e9e9;
+}
+
 /* Start .sub_header */
 .sub_header {
     background-color: rgba(2, 2, 2, 0.5);
@@ -157,11 +161,27 @@ ul {
 
     .mainContent {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 3fr;
     }
 
     .mainContent .plans, .mainContent .filterPlans {
         border: 1px solid red;
+    }
+
+    .mainContent {
+        background-color: white;
+    }
+
+    .mainContent .filterPlans .filter_button {
+        display: none;
+        color: white;
+        background: #0e8fc8;
+        width: 123px;
+        height: 32px;
+        border: 1px solid #0e8fc8;
+        font-size: 21px;
+        outline: none;
+        cursor: pointer;
     }
 
     .mainContent .plans {
@@ -170,13 +190,26 @@ ul {
 
     .mainContent .plans .container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 3em;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .mainContent .plans .container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 920px) {
+        .mainContent .plans .container {
+            grid-template-columns: 1fr;
+        }
     }
 
     .mainContent .plans .container .singlePlan {
         border: 1px solid #ddd;
         box-shadow: 0 0 8px #dedede; 
+        padding: 10px;
     }
 
     .mainContent .plans .container .singlePlan .flex {
@@ -207,6 +240,20 @@ ul {
         margin-left: 13px;
         /* padding: 10px; */
     } 
+
+    @media screen and (max-width: 900px) {
+        .mainContent {
+            grid-template-columns: 1fr;
+        }
+
+        .mainContent .filterPlans .filter_button {
+            display: block;
+        }
+
+        .mainContent .plans, .mainContent .filterPlans {
+            padding: 20px;
+        }
+    }
 
 
 /* End mainContent */

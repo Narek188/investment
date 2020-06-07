@@ -1,0 +1,197 @@
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26,26,26, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1020;
+}
+
+.modal .modalContainer {
+    width: 500px;
+    border: 1px solid #0e8fc8;
+    margin: 70px auto;
+}
+
+.modal .modalHeader {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+    width: 500px;
+    height: 40px;
+    background-color: #0e8fc8;
+}
+
+.modal .register_container {
+    display: none;
+}
+
+.modal .login_container {
+    display: block;
+}
+
+.modal .modalHeader i {
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal .modalContent {
+    padding-bottom: 50px;
+    background-color: #fff;
+}
+
+.modal .buttons {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.modal .buttons button {
+    padding: 8px;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #0e8fc8;
+}
+
+.active {
+    background-color: #0e8fc8;
+    color: #fff;
+}
+
+.passive {
+    background-color: #fff;
+    color: #0e8fc8;
+}
+
+.modal .socialMedia {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.modal .socialMedia i {
+    color: #fff;
+    width: 34px;
+    padding: 8px 0;
+    text-align: center;
+    margin: 0 5px;
+    border-radius: 100%;
+}
+
+.modal .socialMedia .facebook_icon {
+    background: #4285F4;
+}
+
+.modal .socialMedia .google_icon {
+    background: #DB4437;
+}
+
+.modal .socialMedia .twitter_icon {
+    background: #1DA1F2;
+}
+
+.modal .socialMedia .linkedin_icon {
+    background: #0e76a8;
+}
+
+.modal .inputFields {
+    margin-top: 10px;
+    display: grid;
+    justify-items: center;
+}
+
+.modal .input-field { 
+    width: 100%; 
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 270px;
+} 
+
+.modal .select-field {
+    width: 100%; 
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 322px;
+}
+
+.modal .remember {
+    margin-top: 10px;
+    position: relative;
+    left: 90px;
+    top: 10px;
+}
+
+.modal .remember label {
+    font-size: 14px;
+}
+
+.modal .input-icons i {
+    position: absolute;
+}
+ 
+.modal .input-icons { 
+    margin-top: 10px; 
+} 
+ 
+.modal .input-icons .submitButton {
+    width: 120px;
+    height: 30px;
+    background-color: #0e8fc8;
+    border: 1px solid #0e8fc8;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+}
+
+.modal .buttonAndCheckbox {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.modal .buttonAndCheckbox button {
+    width: 120px;
+    height: 30px;
+    background-color: #0e8fc8;
+    border: 1px solid #0e8fc8;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal .buttonAndCheckbox .forgot_pass {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.modal .input-icons .icon { 
+    padding-top: 10px; 
+    color: #0e76a8; 
+    width: 50px; 
+    text-align: center; 
+} 
+
+@media (max-width: 550px) {
+    .modal .modalContainer, .modal .modalHeader {
+        width: 100%;
+    }
+
+    .modal .remember {
+        position: unset;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .modal .remember label {
+        padding-left: 10px;
+    }
+}

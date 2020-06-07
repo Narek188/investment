@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
@@ -12,14 +13,14 @@
     <div class="modal">
         <div class="modalContainer">
             <div class="modalHeader">
-                <i class="fa fa-times" aria-hidden="true"></i>
+                <i class="fa fa-times close_icon" aria-hidden="true"></i>
             </div>
 
             <div class="modalContent">
                 
                 <div class="buttons">
-                    <button class="registerButton"> Regsiter your account </button>
-                    <button class="loginButton"> Sign In to your account </button>
+                    <button class="registerButton passive"> Regsiter your account </button>
+                    <button class="loginButton active"> Sign In to your account </button>
                 </div>
 
                 <div class="socialMedia">
@@ -29,74 +30,75 @@
                     <i class="fa fa-linkedin linkedin_icon" aria-hidden="true"></i>
                 </div>
 
-                <!-- 
-                    Karevor Code
-
+                <div class="login_container">
                     <form action="">
-                    <div class="inputFields">
-                        <div class="input-icons"> 
-                            <i class="fa fa-user icon"> </i> 
-                            <input class="input-field" type="text" placeholder="Your Email"> 
-                        </div> 
-
-                        <div class="input-icons"> 
-                            <i class="fa fa-user icon"> </i> 
-                            <input class="input-field" type="text" placeholder="Your Password"> 
-                        </div> 
-                    </div>
-
-                    <div class="remember">
-                        <input type="checkbox" value="lsRememberMe" id="rememberMe"> <label for="rememberMe">Remember me</label>
-                    </div>
-
-                    <div class="buttonAndCheckbox">
-                        <div class="forgot_pass">
-                            <a href="#"> Forgot password? </a>
+                        <div class="inputFields">
+                            <div class="input-icons"> 
+                                <i class="fa fa-user icon"> </i> 
+                                <input class="input-field" type="text" placeholder="Your Email"> 
+                            </div> 
+    
+                            <div class="input-icons"> 
+                                <i class="fa fa-user icon"> </i> 
+                                <input class="input-field" type="text" placeholder="Your Password"> 
+                            </div> 
                         </div>
-                        <button> Sign In </button>
-                    </div>
-                </form> -->
+    
+                        <div class="remember">
+                            <input type="checkbox" value="lsRememberMe" id="rememberMe"> <label for="rememberMe">Remember me</label>
+                        </div>
+    
+                        <div class="buttonAndCheckbox">
+                            <div class="forgot_pass">
+                                <a href="#"> Forgot password? </a>
+                            </div>
+                            <button> Sign In </button>
+                        </div>
+                    </form>
+                </div>
 
-                <form action="">
-                    <div class="inputFields">
-                        <div class="input-icons"> 
-                            <i class="fa fa-user icon"> </i> 
-                            <input class="input-field" type="text" placeholder="Username"> 
-                        </div> 
-
-                        <div class="input-icons"> 
-                            <i class="fa fa-envelope icon" aria-hidden="true"></i>
-                            <input class="input-field" type="text" placeholder="Email"> 
-                        </div> 
-
-                        <div class="input-icons"> 
-                            <i class="fa fa-key icon"> </i> 
-                            <input class="input-field" type="text" placeholder="Password"> 
-                        </div> 
-
-                        <div class="input-icons"> 
-                            <i class="fa fa-repeat icon"> </i> 
-                            <input class="input-field" type="text" placeholder="Repeat Password"> 
-                        </div> 
-
-                        <div class="input-icons"> 
-                            <i class="fa fa-hand-pointer-o icon" aria-hidden="true"></i>
-                            <select name="" id="" class="select-field">
-                                <option value=""> Buisnessman </option>
-                                <option value=""> Person </option>
-                            </select>
-                        </div> 
-                    </div>
-
-                    <div class="remember">
-                        <input type="checkbox" value="agree" id="agree"> 
-                        <label for="agree">I Agree To The Terms & Condisions</label>
-                    </div>
-
-                    <div class="buttonAndCheckbox">
-                        <button> Register </button>
-                    </div>
-                </form>
+                <div class="register_container">
+                    <form action="">
+                        <div class="inputFields">
+                            <div class="input-icons"> 
+                                <i class="fa fa-user icon"> </i> 
+                                <input class="input-field" type="text" placeholder="Username"> 
+                            </div> 
+    
+                            <div class="input-icons"> 
+                                <i class="fa fa-envelope icon" aria-hidden="true"></i>
+                                <input class="input-field" type="text" placeholder="Email"> 
+                            </div> 
+    
+                            <div class="input-icons"> 
+                                <i class="fa fa-key icon"> </i> 
+                                <input class="input-field" type="text" placeholder="Password"> 
+                            </div> 
+    
+                            <div class="input-icons"> 
+                                <i class="fa fa-repeat icon"> </i> 
+                                <input class="input-field" type="text" placeholder="Repeat Password"> 
+                            </div> 
+    
+                            <div class="input-icons"> 
+                                <i class="fa fa-hand-pointer-o icon" aria-hidden="true"></i>
+                                <select name="" id="" class="select-field">
+                                    <option value=""> Buisnessman </option>
+                                    <option value=""> Person </option>
+                                </select>
+                            </div> 
+                        </div>
+    
+                        <div class="remember">
+                            <input type="checkbox" value="agree" id="agree"> 
+                            <label for="agree">I Agree To The Terms & Condisions</label>
+                        </div>
+    
+                        <div class="buttonAndCheckbox">
+                            <button> Register </button>
+                        </div>
+                    </form>
+                </div>
             </div>
 
         </div>
@@ -162,13 +164,13 @@
                 <div>
                     <ul class="navbar_items">
                         <li>
-                            <button> <i class="fa fa-building" aria-hidden="true"></i> For Companies </button>
+                            <button class="companies_btn"> <i class="fa fa-building" aria-hidden="true"></i> For Companies </button>
                         </li>
                         <li>
-                            <button> <i class="fa fa-sign-in" aria-hidden="true"></i> Login </button>
+                            <button class="login_btn"> <i class="fa fa-sign-in" aria-hidden="true"></i> Login </button>
                         </li>
                         <li>
-                            <button> <i class="fa fa-user-plus" aria-hidden="true"></i> Regsiter </button>
+                            <button class="regsiter_btn"> <i class="fa fa-user-plus" aria-hidden="true"></i> Regsiter </button>
                         </li>
                     </ul>
 
@@ -493,6 +495,9 @@
         </div>
 
     </footer>
+
+    <script src="lib/jquery-3.5.1.min.js"></script>
+    <script src="./js/modal.js"></script>
 
 </body>
 </html>
