@@ -96,7 +96,6 @@ main {
 
 
     @media (max-width: 900px) {
-
         .mainNavbar {
             justify-content: space-between;
         }
@@ -113,7 +112,7 @@ main {
             display: block;
         }
 
-        .mainNavbar .buttons .desktop_items {
+        .mainNavbar .desktop_items {
             display: none;
         }
     }
@@ -173,21 +172,20 @@ main {
     }
 
     .mainContent .filterPlans {
-        /* display: flex;
-        justify-content: center; */
-        /* display: grid; */
         padding: 20px;
     }
 
     .mainContent .search_bar {
-        width: 300px;
+        /* width: 300px;
         border: 1px solid black;
-        background-color: white;
-        height: 100px;
+        background-color: white; */
+    }
+
+    .mainContent .search_bar h2 {
+        padding-bottom: 20px;
     }
     
     .mainContent .search_bar button {
-        margin-top: 10px;
         width: 20%;
         padding: 6px;
         background-color: #0e8fc8;
@@ -198,12 +196,29 @@ main {
         float: right;
     }
 
+    .mainContent .search_bar input[type="search"] {
+        width: 80%;
+        padding: 6px;
+        font-size: 13px;
+        line-height: 1;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
     .mainContent .price_search {
-        width: 300px;
+        /* width: 300px;
         border: 1px solid black;
-        background-color: white;
-        height: 100px;
+        background-color: white; */
         margin-top: 40px;
+    }
+
+    .mainContent .price_search h2 {
+        padding-bottom: 35px;
     }
 
     .mainContent .price_search input[type=range] {
@@ -240,12 +255,12 @@ main {
         background: #03a9f4;
     }
 
-    .mainContent .price_search .range-value{
+    .mainContent .price_search .range-value {
         position: relative;
-        top: -50%;
+        bottom: 20px;
     }
 
-    .mainContent .price_search span{
+    .mainContent .price_search span {
         width: 30px;
         height: 24px;
         line-height: 24px;
@@ -255,7 +270,7 @@ main {
         font-size: 12px;
         display: block;
         position: absolute;
-        /* left: 50%; */
+        left: 2.2%;
         transform: translate(-50%, 0);
         border-radius: 6px;
     }
@@ -274,19 +289,73 @@ main {
         margin-top: -1px;
     }
 
-    .mainContent input {
-        margin-top: 10px;
-        width: 80%;
-        padding: 6px;
-        font-size: 13px;
-        line-height: 1;
-        color: #555;
-        background-color: #fff;
-        background-image: none;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    .mainContent .price_search .search_container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mainContent .price_search .search_container button {
+        display: none;
+        color: white;
+        background: #03a9f4;
+        border: 1px solid #03a9f4;
+        width: 100px;
+        height: 25px;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .mainContent .date_search {
+        /* width: 300px;
+        border: 1px solid black;
+        background-color: white; */
+        margin-top: 40px;
+    }
+
+    .mainContent .date_search .date_input_container {
+        padding-top: 25px;
+    }
+
+    .mainContent .date_search .date_input_container .end_container {
+        margin-top: 34px;
+    }
+
+    .mainContent .date_search .date_input_container input {
+        width: 100%;
+        padding: 2px;
+    }
+
+    .mainContent .category_filter {
+        /* width: 300px;
+        border: 1px solid black;
+        background-color: white; */
+        margin-top: 40px;
+    }
+
+    .mainContent .category_filter label {
+        font-size: 12px;
+        line-height: 12px;
+        padding: 2px 0 2px 20px;
+        position: relative;
+    }
+
+    .mainContent .category_filter input {
+        position: absolute;
+        left: 0;
+        top: 1px;
+        margin: 0;
+    }
+
+    .mainContent .category_filter label span {
+        color: #999;
+    }
+
+    .mainContent .category_filter ul {
+        /* margin-top: 17px; */
+    }
+
+    .mainContent .category_filter ul li {
+        padding-top: 10px;
     }
 
     .mainContent .filterPlans .filter_button {
@@ -357,20 +426,65 @@ main {
         margin-left: 13px;
         /* padding: 10px; */
     } 
+   
+    .mainContent .filterPlans .all_search_divs {
+        display: block;
+    }
+
+    .mainContent .filterPlans .all_search_divs .country_search {
+        margin-top: 40px;
+    }
+
+    .mainContent .filterPlans .all_search_divs .country_search h2 {
+        padding-bottom: 18px;
+    }
+
+    .mainContent .filterPlans .all_search_divs .country_search select {
+        width: 100%;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .mainContent .filterPlans .all_search_divs .search_bar,
+    .mainContent .filterPlans .all_search_divs .price_search,
+    .mainContent .filterPlans .all_search_divs .date_search,
+    .mainContent .filterPlans .all_search_divs .category_filter,
+    .mainContent .filterPlans .all_search_divs .country_search {
+        width: 300px;
+        border: 1px solid black;
+        background-color: white;
+    }
 
     @media screen and (max-width: 900px) {
         .mainContent {
             grid-template-columns: 1fr;
         }
 
-        .mainContent .filterPlans .filter_button {
+        .mainContent .filterPlans .filter_button{
             display: block;
         }
 
+        .mainContent .filterPlans .all_search_divs {
+            display: none;
+            margin-top: 30px;
+        }
+
+        .mainContent .filterPlans .all_search_divs .search_bar,
+        .mainContent .filterPlans .all_search_divs .price_search,
+        .mainContent .filterPlans .all_search_divs .date_search,
+        .mainContent .filterPlans .all_search_divs .category_filter,
+        .mainContent .filterPlans .all_search_divs .country_search {
+            width: 100%;
+        }
+        
         .mainContent .plans, .mainContent .filterPlans {
             padding: 20px;
         }
     }
 
-
+    @media screen and (max-width: 500px) {
+        .mainContent .plans, .mainContent .filterPlans {
+            padding: 10px;
+        }
+    }
 /* End mainContent */

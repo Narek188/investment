@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/user_plans.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://luciopaiva.com/country-flags/dist/country-flag.css">
     <title>Document</title>
 </head>
 <body>
@@ -68,18 +69,22 @@
                         <li>
                             <button class="bars"><i class="fa fa-bars" aria-hidden="true"></i></button>
                         </li>
-                      <div class="desktop_items">
-                        <li>
-                            <button> <i class="fa fa-building" aria-hidden="true"></i> Four Companies </button>
-                        </li>
-                        <li>
-                            <button> <i class="fa fa-sign-in" aria-hidden="true"></i> Login </button>
-                        </li>
-                        <li>
-                            <button> <i class="fa fa-user-plus" aria-hidden="true"></i> Regsiter </button>
-                        </li>
-                      </div>
                     </ul>
+
+                    <div class="desktop_items">
+                        <ul class="buttons">
+                            <li>
+                                <button> <i class="fa fa-building" aria-hidden="true"></i> Four Companies </button>
+                            </li>
+                            <li>
+                                <button> <i class="fa fa-sign-in" aria-hidden="true"></i> Login </button>
+                            </li>
+                            <li>
+                                <button> <i class="fa fa-user-plus" aria-hidden="true"></i> Regsiter </button>
+                            </li>
+                        </ul>
+                    </div>
+                    
                 </div>
            </div>
         </nav>
@@ -97,24 +102,87 @@
         <div class="mainContent">
 
             <div class="filterPlans">
-                <button class="filter_button"> Filter <i class="fa fa-bars" aria-hidden="true"></i> </button>
                 
-                <div class="search_bar">
-                    <h2> Search your plan </h2>
-                    <input type="search" name="" id="" placeholder="Search...">
-                    <button>
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
+                <button class="filter_button"> Filter <i class="fa fa-bars" aria-hidden="true"></i> </button>
 
-                <div class="price_search">
-                    <h2> Choose plan price </h2>
-                    <!-- <div class="range-value" id="rangeV"></div> -->
-                    <div class="range-value" id="rangeV"></div>
-                    <input id="range" type="range" min="200" max="800" value="200" step="1">
-                    <!-- </div> -->
-                </div>
+                <div class="all_search_divs">
+                    <div class="search_bar">
+                        <h2> Search your plan </h2>
+                        <input type="search" name="" id="" placeholder="Search...">
+                        <button>
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+    
+                    <div class="price_search">
+                        <h2> Choose plan price </h2>
+                        <div class="range-value" id="rangeV"></div>
+                        <input id="range" type="range" min="0" max="800" value="0" step="1">
+    
+                        <div class="search_container">
+                            <button> Search </button>
+                        </div>
+                    </div>
+    
+                    <div class="date_search">
+                        <h2> Choose by date </h2>
+    
+                        <div class="date_input_container">
+                            <label for="">Start by:</label>
+                            <input type="date" value="1980-08-26">
+    
+                            <div class="end_container">
+                                <label for="">End by:</label>
+                                <input type="date" value="1980-08-26">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="category_filter">
+                        <h2> Choose by date </h2>
+    
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="JobsFilter[category][]" value="1" checked="checked">
+                                    Ծրագրավորում
+                                    <span data-count="152"> (152)</span>
+                                </label>
+                            </li>
+    
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="JobsFilter[category][]" value="1">
+                                    Ծրագրավորում
+                                    <span data-count="152"> (152)</span>
+                                </label>
+                            </li>
+    
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="JobsFilter[category][]" value="1">
+                                    Ծրագրավորում
+                                    <span data-count="152"> (152)</span>
+                                </label>
+                            </li>
+    
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="JobsFilter[category][]" value="1">
+                                    Ծրագրավորում
+                                    <span data-count="152"> (152)</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
 
+                    <div class="country_search">
+                        <h2> Select your country </h2>
+
+                        <select></select>
+                    </div>
+
+                </div>
             </div>
 
             <div class="plans">
@@ -214,6 +282,99 @@
                         </div>
                     </div>
 
+                    <div class="singlePlan">
+                        <div class="flex">
+                            <div>
+                                <img src="./index/avatar.jpg">
+                            </div>
+                            <div>
+                                <h2> Narek Sargsyan </h2>
+                            </div>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae sunt eveniet sed commodi 
+                            quia explicabo minus totam adipisci fugiat eligendi iure doloremque, ea ullam illum ipsam voluptatibus 
+                            nobis repellat et?
+                        </p>
+
+                        <div class="more">
+                            <div>
+                                <i class="fa fa-money" aria-hidden="true"></i> 100$
+                                <select name="" id="">
+                                    <option value=""> USD </option>
+                                    <option value=""> EUR </option>
+                                    <option value=""> RUB </option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <a href="#"> Read More </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="singlePlan">
+                        <div class="flex">
+                            <div>
+                                <img src="./index/avatar.jpg">
+                            </div>
+                            <div>
+                                <h2> Narek Sargsyan </h2>
+                            </div>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae sunt eveniet sed commodi 
+                            quia explicabo minus totam adipisci fugiat eligendi iure doloremque, ea ullam illum ipsam voluptatibus 
+                            nobis repellat et?
+                        </p>
+
+                        <div class="more">
+                            <div>
+                                <i class="fa fa-money" aria-hidden="true"></i> 100$
+                                <select name="" id="">
+                                    <option value=""> USD </option>
+                                    <option value=""> EUR </option>
+                                    <option value=""> RUB </option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <a href="#"> Read More </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="singlePlan">
+                        <div class="flex">
+                            <div>
+                                <img src="./index/avatar.jpg">
+                            </div>
+                            <div>
+                                <h2> Narek Sargsyan </h2>
+                            </div>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae sunt eveniet sed commodi 
+                            quia explicabo minus totam adipisci fugiat eligendi iure doloremque, ea ullam illum ipsam voluptatibus 
+                            nobis repellat et?
+                        </p>
+
+                        <div class="more">
+                            <div>
+                                <i class="fa fa-money" aria-hidden="true"></i> 100$
+                                <select name="" id="">
+                                    <option value=""> USD </option>
+                                    <option value=""> EUR </option>
+                                    <option value=""> RUB </option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <a href="#"> Read More </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
@@ -222,6 +383,8 @@
 
     </main>
 
+    <script src="lib/jquery-3.5.1.min.js"></script>
+    <script src="https://luciopaiva.com/country-flags/dist/country-flag.js"></script>
     <script src="./js/user_plans.js"></script>
 
 </body>
