@@ -29,12 +29,11 @@ $('.mainContent .filter_button').on('click', function () {
 
 $.getJSON('https://trial.mobiscroll.com/content/countries.json', function(value) {
     for (var i = 0; i < value.length; i++) {
-        $('.mainContent .country_search select').append('<option value='+value[i].value+'>'+value[i].text+'</option>');
+        $('.mainContent .country_search select').append('<option value='+value[i].value+'>'+value[i].text+' <span>(152)</span> </option>');
     }
 });
 
 $(window).resize(function () {
-
     if (window.innerWidth < 900) {
         $('.mainContent .all_search_divs').slideUp('slow');
     }
