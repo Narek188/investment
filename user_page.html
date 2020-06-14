@@ -113,7 +113,7 @@
                     <tr>
                         <td>Name: </td>
                         <td>
-                            <input type="text" class="nameChangeInput change_inp" />
+                            <input />
                             <span>John</span>
                         </td>
                         <td><i class="fa fa-pencil" id="change_name" aria-hidden="true"></i></td>
@@ -121,25 +121,34 @@
 
                     <tr>
                         <td>Surname: </td>
-                        <td>Doe</td>
+                        <td>
+                            <input />
+                            <span>Doe</span>
+                        </td>
                         <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
                     </tr>
 
                     <tr>
                         <td>Phone Number: </td>
-                        <td>+374 91344049</td>
+                        <td>
+                            <input />
+                            <span>+374 91344049</span>
+                        </td>
                         <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
                     </tr>
 
                     <tr>
                         <td>Age: </td>
-                        <td>24</td>
+                        <td>
+                            <input type="number" />
+                            <span>24</span>
+                        </td>
                         <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
                     </tr>
 
                     <tr>
                         <td>Gender: </td>
-                        <td>
+                        <td id="gender_td">
                             <label for="male_gender">
                                 <input type="radio" name="gender" id="male_gender" checked>
                                 Male
@@ -149,14 +158,23 @@
                                 <input type="radio" name="gender" id="female_gender">
                                 Female
                             </label>
+
+                            <span>Male</span>
                         </td>
-                        <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                        <td><i class="fa fa-pencil" id="select_gender" aria-hidden="true"></i></td>
                     </tr>
 
                     <tr>
                         <td>Country: </td>
-                        <td>Armenia</td>
-                        <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                        <td>
+                            <!-- <input type="text" /> -->
+                            <select name="" id="">
+                                <option value="fr">French</option>
+                                <option value="arm">Armenia</option>
+                            </select>
+                            <span>Armenia</span>
+                        </td>
+                        <td><i class="fa fa-pencil" id="select_country" aria-hidden="true"></i></td>
                     </tr>
                 </table>
             </div>

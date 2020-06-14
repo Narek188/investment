@@ -165,7 +165,12 @@ ul {
         cursor: pointer;
     }
 
-    .nameChangeInput {
+    .header-container .contacts-container table input,
+    .header-container .contacts-container table select {
+        display: none;
+    }
+
+    .header-container .contacts-container table #gender_td label {
         display: none;
     }
 
