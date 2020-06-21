@@ -118,20 +118,20 @@ ul {
 /* Start Main */
     
     .header-container {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 10%);
+        margin-top: 20px;
         border: 1px solid black;
         display: flex;
+        justify-content: center;
     }
 
     .header-container .upload-container {
-        width: 250px;
         background-color: rgba(0, 142, 198, 1);
         padding: 50px;
     }
 
     .header-container .upload-container form {
+        display: grid;
+        justify-items: center;
         margin-top: 8px;
     }
 
@@ -161,6 +161,11 @@ ul {
         margin-top: 20px;
     }
 
+    .header-container .contacts-container table {
+        width: 500px;
+        height: 250px;
+    }
+
     .header-container .contacts-container table i {
         cursor: pointer;
     }
@@ -170,8 +175,111 @@ ul {
         display: none;
     }
 
-    .header-container .contacts-container table #gender_td label {
+    .header-container .contacts-container table #gender_td .gender_container {
         display: none;
+    }
+
+    @media (max-width: 860px) {
+        .header-container {
+            flex-wrap: wrap;
+        }
+
+        .header-container .upload-container {
+            width: 400px;
+        }
+    }
+
+    @media (max-width: 550px) {
+        .header-container {
+            flex-wrap: wrap;
+        }
+
+        .header-container .upload-container {
+            width: 100%;
+        }
+
+        .header-container .contacts-container {
+            width: 100%;
+        }
+
+        .header-container .contacts-container table {
+            width: 100%;
+        }
+    }
+
+    .buisness_plan_container, 
+    .bio_container, 
+    .price_container, 
+    .skills_container, 
+    .social_media {
+        margin-top: 20px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+    }
+
+    .buisness_plan_container .text_container, 
+    .bio_container .text_container, 
+    .price_container .text_container,
+    .skills_container .text_container,
+    .social_media .text_container{
+        width: 900px;
+        border: 1px solid red;
+    }
+
+    .buisness_plan_container .text_container .head, 
+    .bio_container .text_container .head, 
+    .price_container .text_container .head, 
+    .skills_container .text_container .head,
+    .social_media .text_container .head {
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    .buisness_plan_container .text_container p, 
+    .bio_container .text_container p, 
+    .price_container .text_container p {
+        font-size: 17px;
+        padding-top: 15px;
+        line-height: 25px;
+    }
+
+    .buisness_plan_container .text_container i, 
+    .bio_container .text_container i, 
+    .price_container .text_container i,
+    .skills_container .text_container i {
+        font-size: 14px;
+        padding-left: 5px;
+        cursor: pointer;
+    }
+
+    .skills_container .text_container .skills_cotnainer {
+        padding-top: 15px;
+    }
+
+    .skills_container .text_container .skills_cotnainer .skill_item {
+        padding: 8px 25px;
+        background: #0e8fc8;
+        border-radius: 20px;
+        margin-right: 10px;
+        display: inline-block;
+        margin-bottom: 5px;
+        color: #fff;    
+    }
+
+    .social_media .media_cotnainer img {
+        width: 30px;
+    }
+
+    .social_media .media_cotnainer .flex {
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .social_media .media_cotnainer .flex p {
+        padding-left: 10px;
+        font-size: 16px;
     }
 
 /* End Main */
